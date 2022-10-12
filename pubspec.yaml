@@ -1,0 +1,44 @@
+name: todo_app
+description: Simple Todo app.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+  drift: ^2.2.0
+  flutter_slidable: ^2.0.0
+  path: ^1.8.2
+  path_provider: ^2.0.11
+  provider: ^6.0.3
+  sqlite3_flutter_libs: ^0.5.10
+
+dev_dependencies:
+  build_runner: ^2.2.1
+  drift_dev: ^2.2.0+1
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: Dancing Script
+      fonts:
+        - asset: assets/fonts/DancingScript-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/DancingScript-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/DancingScript-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/DancingScript-Bold.ttf
+          weight: 700
